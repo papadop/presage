@@ -5,7 +5,7 @@
 // Copyright 1998-2001 by Neil Hodgson <neilh@scintilla.org>
 // The License.txt file describes the conditions under which this software may be distributed.
 
-#include <string.h>
+#include <stdexcept>
 
 #include "Platform.h"
 
@@ -68,6 +68,7 @@ FontMeasurements::FontMeasurements() {
 void FontMeasurements::Clear() {
 	ascent = 1;
 	descent = 1;
+	capitalHeight = 1;
 	aveCharWidth = 1;
 	spaceWidth = 1;
 	sizeZoomed = 2;

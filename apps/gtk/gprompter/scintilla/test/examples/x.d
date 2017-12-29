@@ -1,4 +1,4 @@
-﻿$
+$
 // /++ +/ doccomments are not yet supported
 /* */
 /** */

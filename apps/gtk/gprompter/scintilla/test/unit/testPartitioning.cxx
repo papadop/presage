@@ -1,11 +1,15 @@
 // Unit Tests for Scintilla internal data structures
 
-#include <string.h>
+#include <cstring>
 
+#include <stdexcept>
+#include <vector>
 #include <algorithm>
+#include <memory>
 
 #include "Platform.h"
 
+#include "Position.h"
 #include "SplitVector.h"
 #include "Partitioning.h"
 

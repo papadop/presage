@@ -35,7 +35,10 @@ scintilla/gtk/Converter.h \
 scintilla/gtk/PlatGTK.cxx \
 scintilla/gtk/ScintillaGTK.cxx \
 scintilla/gtk/scintilla-marshal.c \
-scintilla/gtk/scintilla-marshal.h 
+scintilla/gtk/scintilla-marshal.h \
+scintilla/gtk/ScintillaGTK.h \
+scintilla/gtk/ScintillaGTKAccessible.cxx \
+scintilla/gtk/ScintillaGTKAccessible.h
 
 SCINTILLA_SRC = \
 scintilla/src/AutoComplete.cxx \
@@ -97,14 +100,18 @@ scintilla/src/EditModel.h \
 scintilla/src/EditView.cxx \
 scintilla/src/EditView.h \
 scintilla/src/MarginView.cxx \
-scintilla/src/MarginView.h
+scintilla/src/MarginView.h \
+scintilla/src/Position.h \
+scintilla/src/SparseVector.h \
+scintilla/src/UniqueString.h
 
 SCINTILLA_INCLUDE = \
 scintilla/include/ILexer.h \
 scintilla/include/Platform.h \
 scintilla/include/SciLexer.h \
 scintilla/include/Scintilla.h \
-scintilla/include/ScintillaWidget.h
+scintilla/include/ScintillaWidget.h \
+scintilla/include/Sci_Position.h
 
 SCINTILLA_LEXLIB = \
 scintilla/lexlib/LexerSimple.h \
@@ -188,7 +195,6 @@ scintilla/lexers/LexMPT.cxx \
 scintilla/lexers/LexBaan.cxx \
 scintilla/lexers/LexPerl.cxx \
 scintilla/lexers/LexPascal.cxx \
-scintilla/lexers/LexOthers.cxx \
 scintilla/lexers/LexProgress.cxx \
 scintilla/lexers/LexMySQL.cxx \
 scintilla/lexers/LexVB.cxx \
@@ -230,8 +236,16 @@ scintilla/lexers/LexKVIrc.cxx \
 scintilla/lexers/LexRegistry.cxx \
 scintilla/lexers/LexRust.cxx \
 scintilla/lexers/LexBibTeX.cxx \
-scintilla/lexers/LexHex.cxx
-
+scintilla/lexers/LexHex.cxx \
+scintilla/lexers/LexBatch.cxx \
+scintilla/lexers/LexDiff.cxx \
+scintilla/lexers/LexEDIFACT.cxx \
+scintilla/lexers/LexErrorList.cxx \
+scintilla/lexers/LexIndent.cxx \
+scintilla/lexers/LexJSON.cxx \
+scintilla/lexers/LexMake.cxx \
+scintilla/lexers/LexNull.cxx \
+scintilla/lexers/LexProps.cxx
 
 
 libscintilla_la_SOURCES =	$(SCINTILLA_SRC) $(SCINTILLA_GTK) $(SCINTILLA_INCLUDE) $(SCINTILLA_LEXERS) $(SCINTILLA_LEXLIB)

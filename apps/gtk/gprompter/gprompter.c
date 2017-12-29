@@ -56,7 +56,7 @@ static const long  glob_max_callback_context_range_size = 1024 * 2;
 static const char* get_past_stream (void* scintilla)
 {
     ScintillaObject* sci = SCINTILLA(scintilla);
-    static struct TextRange range;
+    static struct Sci_TextRange range;
     range.chrg.cpMin = 0;
     range.chrg.cpMax = scintilla_send_message(sci,
 					      SCI_GETCURRENTPOS,
@@ -89,7 +89,7 @@ static const char* get_past_stream (void* scintilla)
 static const char* get_future_stream (void* scintilla)
 {
     ScintillaObject* sci = SCINTILLA(scintilla);
-    static struct TextRange range;
+    static struct Sci_TextRange range;
     range.chrg.cpMin = scintilla_send_message(sci,
 					      SCI_GETCURRENTPOS,
 					      0,

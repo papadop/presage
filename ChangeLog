@@ -1,3 +1,8 @@
+2017-12-29  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
+
+	* apps/gtk/gprompter/scintilla/*: Update to scintilla 3.7.6
+	release.
+
 2016-11-16  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* packaging/windows/*: update Windows installer to package 64-bit
