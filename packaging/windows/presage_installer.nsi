@@ -151,9 +151,9 @@ Section "-Runtime" SecRuntime
   File "bin\Qt5Gui.dll"
   File "bin\Qt5Widgets.dll"
   File "bin\Qt5PrintSupport.dll"
-  File "bin\libicuin57.dll"
-  File "bin\libicuuc57.dll"
-  File "bin\libicudt57.dll"
+  File "bin\libicuin58.dll"
+  File "bin\libicuuc58.dll"
+  File "bin\libicudt58.dll"
   File "bin\libpcre16-0.dll"
 
   ; GTK deps
