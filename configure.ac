@@ -204,10 +204,16 @@ AM_CONDITIONAL([USE_SQLITE], [test "x$use_sqlite" = "xyes"])
 dnl ==================
 dnl Checks for CppUnit
 dnl ==================
-AM_PATH_CPPUNIT([1.9.6],
-                [],
-                [AC_MSG_WARN([CppUnit not found. Unit tests will not be built. CppUnit can be obtained from http://cppunit.sourceforge.net.])])
-AM_CONDITIONAL([HAVE_CPPUNIT], [test "$CPPUNIT_LIBS"])
+PKG_CHECK_MODULES([CPPUNIT],
+                  [cppunit >= 1.9],
+                  [have_cppunit=yes],
+                  [AM_PATH_CPPUNIT([1.9],
+                                   [have_cppunit=yes],
+                                   [AC_MSG_WARN([CppUnit not found. Unit tests will not be built. CppUnit can be obtained from http://cppunit.sourceforge.net.])])
+                  ])
+AC_SUBST([CPPUNIT_CFLAGS])
+AC_SUBST([CPPUNIT_LIBS])
+AM_CONDITIONAL([HAVE_CPPUNIT], [test "x$have_cppunit" = "xyes"])
 
 
 dnl ============================
@@ -592,7 +598,7 @@ then
 else
     build_demo_application="no"
 fi
-if test "$CPPUNIT_LIBS"
+if test "x$have_cppunit" = "xyes"
 then
     build_unit_tests="yes"
 else
