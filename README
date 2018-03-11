@@ -19,12 +19,13 @@ documentation.
 
 Requirements:
 - A working development enviroment.
-  On Linux/Unix systems, this means having GCC (g++), the GNU Compiler
-  Collection packages, as well as libraries for these languages
-  (libstdc++, glibc, etc).
 
-  On Solaris systems, this means having Sun Studio 10 or Sun Studio 11
-  compilers.
+  On Linux/Unix systems, this means having GCC (g++), the GNU Compiler
+  Collection packages, make, as well as libraries for these languages
+  (libstdc++, glibc, etc). To regenerate the autotools machinery,
+  you'll need autoconf, automake, libtool and pkg-config packages.
+
+  On Solaris systems, this means having Studio 10 or later compilers.
 
   On Windows systems, please either install the Cygwin development
   environment or the MinGW/MSYS developer environment.
