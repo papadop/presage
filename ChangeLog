@@ -1,3 +1,11 @@
+2018-08-05  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
+
+	* website/first: archive historical first web page to first/
+
+	* website/drupal: move current site sources and data to drupal/
+
+	* website/hugo: add initial commit for hugo base static site
+
 2018-01-21  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* configure.ac, doc/Makefile.am: fixed detection of cppunit and

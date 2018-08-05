@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "presage"
+theme = "ananke"
+
+[params]
+  favicon = ""
+  description = "the intelligent predictive text entry system"
+#  featured_image = "/images/presage-hero-image.jpg"
+  background_color_class = 'bg-gray'
