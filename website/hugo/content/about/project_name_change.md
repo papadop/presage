@@ -7,7 +7,7 @@ draft:       false
 promote:     false
 sticky:      false
 aliases:     [ node/37 ]
-menu:        [ "menu-sections", "primary-links" ]
+weight:	     30
 ---
 
 In July 2008, Soothsayer project leader and developer Matteo Vescovi was contacted by a company called [Applied Human Factors](http://www.ahf-net.com/) (AHF) in relation to the "Soothsayer" project name.

@@ -7,7 +7,7 @@ draft:       false
 promote:     false
 sticky:      false
 aliases:     [ node/14 ]
-menu:        [ "menu-sections", "primary-links" ]
+weight:	     10
 ---
 
 Presage's architecture revolves around the concept of predictive plugins. Predictive plugins implement can be individually tuned to finely control presage's prediction generation process.

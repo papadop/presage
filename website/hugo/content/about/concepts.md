@@ -7,7 +7,7 @@ draft:       false
 promote:     false
 sticky:      false
 aliases:     [ node/10 ]
-menu:        [ "menu-sections", "primary-links" ]
+weight:	     20
 ---
 
 How can presage predict what text the user is going to enter next?
