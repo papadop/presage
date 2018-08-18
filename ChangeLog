@@ -4,6 +4,8 @@
 
 	* website/hugo/config.toml: change paginate to 6.
 
+	* website/hugo/static/presage.ico: add favicon, copy of resources.
+
 	* resources/*: refresh presage logo graphic assets.
 
 2018-08-12  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
