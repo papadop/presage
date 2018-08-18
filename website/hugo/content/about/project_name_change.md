@@ -4,9 +4,6 @@ type:        page
 date:        2008-07-08
 changed:     2012-06-09
 draft:       false
-promote:     false
-sticky:      false
-aliases:     [ node/37 ]
 weight:	     30
 ---
 

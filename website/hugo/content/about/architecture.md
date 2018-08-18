@@ -1,12 +1,9 @@
 ---
 title:       "Architecture"
-type:        page
+type:	     page
 date:        2007-05-12
 changed:     2009-12-22
 draft:       false
-promote:     false
-sticky:      false
-aliases:     [ node/14 ]
 weight:	     10
 ---
 
