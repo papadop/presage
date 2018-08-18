@@ -2,6 +2,8 @@
 
 	* website/hugo/content/about/*: remove unused front matter params.
 
+	* website/hugo/config.toml: change paginate to 6.
+
 2018-08-12  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* website/hugo/content/news/*: more updates website news content.

@@ -2,6 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "presage"
 theme = "ananke"
+Paginate = 6
 
 [params]
   favicon = ""
