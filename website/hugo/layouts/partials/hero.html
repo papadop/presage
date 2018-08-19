@@ -1,10 +1,8 @@
 <header>
-  <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | default "bg-black" }}">
-
+  <div class="pb2-m pb4-l {{ .Site.Params.background_color_class | default "bg-black" }}">
     {{ partial "site-navigation.html" . }}
-
-    <div class="tc pv0 ph3 ph4-ns">
-      <h1 class="f1 f-subheadline-m f-headline-l tracked fw3 presage-red mb0 lh-title">
+    <div class="tc pv0 ph1 ph2-ns">
+      <h1 class="f1 f-subheadline-m f-headline-l tracked fw3 presage-red mt4 mb0 lh-title">
         {{ .Title | default .Site.Title }}
       </h1>
     <div class="center w-100 w-50-ns">
