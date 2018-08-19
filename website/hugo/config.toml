@@ -10,3 +10,6 @@ Paginate = 6
 #  featured_image = "/images/presage-hero-image.jpg"
   background_color_class = 'presage-bg-gray'
   custom_css = ["css/presage.css"]
+#  linkedin = "https://www.linkedin.com/in/matteo-vescovi-2410076/"
+  author = "Matteo Vescovi"
+  author_website = "http://multithread.org"
