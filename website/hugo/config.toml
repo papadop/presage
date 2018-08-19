@@ -8,6 +8,7 @@ Paginate = 6
   favicon = "presage.ico"
   description = "the intelligent predictive text entry system"
 #  featured_image = "/images/presage-hero-image.jpg"
+#  featured_image = ""
   background_color_class = 'presage-bg-gray'
   custom_css = ["css/presage.css"]
 #  linkedin = "https://www.linkedin.com/in/matteo-vescovi-2410076/"

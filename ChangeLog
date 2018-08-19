@@ -1,7 +1,10 @@
 2018-08-19  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* website/hugo/*: remove links content from site, add hero header
-	for home page, add presage CSS, edit site footer.
+	for home page, add presage CSS, customize site footer, header,
+	navigation.
+
+	* resources/presage-small.svg: smaller presage logo SVG.
 
 2018-08-18  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
