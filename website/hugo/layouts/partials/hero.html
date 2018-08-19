@@ -1,0 +1,20 @@
+<header>
+  <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | default "bg-black" }}">
+
+    {{ partial "site-navigation.html" . }}
+
+    <div class="tc pv0 ph3 ph4-ns">
+      <h1 class="f1 f-subheadline-m f-headline-l tracked fw3 light-red mb0 lh-title">
+        {{ .Title | default .Site.Title }}
+      </h1>
+    <div class="center w-100 w-50-ns">
+      {{ partial "svg/presage.svg" . }}
+    </div>
+    {{ with .Params.description }}
+      <h2 class="fw1 f5 f4-m f3-l white-80 measure-wide center lh-copy mt3 mb4">
+        {{ . }}
+      </h2>
+    {{ end }}
+    </div>
+  </div>
+</header>

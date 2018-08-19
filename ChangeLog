@@ -1,6 +1,7 @@
 2018-08-19  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
-	* website/hugo/*: remove links content from site.
+	* website/hugo/*: remove links content from site, add hero header
+	for home page.
 
 2018-08-18  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
