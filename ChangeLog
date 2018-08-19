@@ -2,7 +2,7 @@
 
 	* website/hugo/*: remove links content from site, add hero header
 	for home page, add presage CSS, customize site footer, header,
-	navigation.
+	navigation, list default template.
 
 	* resources/presage-small.svg: smaller presage logo SVG.
 
