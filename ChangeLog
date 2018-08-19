@@ -1,3 +1,7 @@
+2018-08-19  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
+
+	* website/hugo/*: remove links content from site.
+
 2018-08-18  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* website/hugo/content/about/*: remove unused front matter params.
