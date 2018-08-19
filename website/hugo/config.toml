@@ -8,4 +8,5 @@ Paginate = 6
   favicon = "presage.ico"
   description = "the intelligent predictive text entry system"
 #  featured_image = "/images/presage-hero-image.jpg"
-  background_color_class = 'bg-gray'
+  background_color_class = 'presage-bg-gray'
+  custom_css = ["css/presage.css"]
