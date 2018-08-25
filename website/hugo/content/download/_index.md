@@ -1,12 +1,7 @@
 ---
 title:       "Download"
-type:        page
 date:        2007-05-12
 changed:     2012-06-09
-draft:       false
-promote:     false
-sticky:      false
-aliases:     [ node/16 ]
 menu:        [ "main" ]
 weight:	     30
 description: "presage binaries and sources"
@@ -37,8 +32,6 @@ Stable binary releases for Windows are available for download from [SourceForge]
 
 To use the Notepad++ presage predictive text entry plugin, please ensure that you select the right bitness to match your Notepad++ installation (pick 64-bit presage installer if you use 32-bit Notepad++ and pick 32-bit presage installer if you use 64-bit Notepad++).
 
-<a href="http://sourceforge.net/project/showfiles.php?group_id=172950"><img src="./download_presage.png" alt="Download presage" /></a>
-
 
 ## Building from source
 
@@ -62,11 +55,16 @@ files for more detailed information on software dependencies required to build p
 A full list of required and optional software can be found in the [README](https://sourceforge.net/p/presage/presage/ci/master/tree/README).
 
 
+### Source releases
+
+Stable source code releases are available [here](http://sourceforge.net/project/showfiles.php?group_id=172950).
+
+
 ### GIT access
 
 You can obtain the very latest *bleeding edge* source code directly from our source code repository.
 
-Please note that the latest sources may be in an *experimental* state and thus not suitable for general usage (in practice, however, head is usually in pretty good shape).
+Please note that from time to time the latest sources may be in an *experimental* state and thus not suitable for general usage (in practice, however, head is usually in pretty good shape).
 
 Please refer to the source code repository section on our [development](/development/) page for additional instructions.
 

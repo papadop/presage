@@ -1,12 +1,7 @@
 ---
 title:       "Development"
-type:        page
 date:        2007-05-12
 changed:     2013-11-06
-draft:       false
-promote:     false
-sticky:      false
-aliases:     [ node/18 ]
 menu:        [ "main" ]
 weight:	     70
 description: "contribute to presage"
@@ -28,7 +23,7 @@ Once you are ready to get coding, be sure to:
 
 ## Source code repository
 
-The [presage project](href="http://sourceforge.net/projects/presage/) is hosted by [SourceForge.net](http://sourceforge.net/).
+The [presage project](http://sourceforge.net/projects/presage/) is hosted by [SourceForge.net](http://sourceforge.net/).
 
 The source code lives in a Git repository.
 
@@ -36,7 +31,6 @@ The following command will clone the presage repository:
 
     git clone git://git.code.sf.net/p/presage/presage
 
-More information on the presage's source code repository is available [here](https://sourceforge.net/projects/presage/develop).
 
 
 ## Donations
@@ -50,7 +44,7 @@ If you wish to have a feature implemented, please [get in touch](/contact).
 
 ## Bug reporting
 
-Bugs should be logged in the [presage bug tracking system](http://sourceforge.net/tracker/?group_id=172950).
+Bugs should be logged in the [presage bug tracking system](https://sourceforge.net/p/presage/bugs/).
 
 
 ## Mailing lists

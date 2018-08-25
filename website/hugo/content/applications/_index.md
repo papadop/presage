@@ -14,7 +14,7 @@ description: "see presage in action"
 
 Presage is used in a bunch of open-source projects.
 
-[ACAT](https://github.com/intel/acat), the Assistive Context-Aware Toolkit, is an open source platform developed at Intel Labs to enable people with motor neuron diseases and other disabilities to have full access to the capabilities and applications of their computers through very constrained interfaces suitable for their condition. ACAT was originally developed by researchers at Intel Labs for Professor [Stephen Hawking](https://en.wikipedia.org/wiki/Stephen_Hawking). Predictive text functionality is provided by the presage WCF service.
+[ACAT](https://01.org/acat), the Assistive Context-Aware Toolkit, is an [open source platform](https://github.com/intel/acat) developed at Intel Labs to enable people with motor neuron diseases and other disabilities to have full access to the capabilities and applications of their computers through very constrained interfaces suitable for their condition. ACAT was originally developed by researchers at Intel Labs for Professor [Stephen Hawking](https://en.wikipedia.org/wiki/Stephen_Hawking). Predictive text functionality is provided by the presage WCF service.
 
 Presage comes with a number of demo applications, some of which might be usable in their own right.
 
