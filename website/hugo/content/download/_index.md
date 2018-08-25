@@ -51,17 +51,15 @@ A working development environment:
 
 Please refer to:
 
-  * <a href="http://presage.git.sourceforge.net/git/gitweb.cgi?p=presage/presage;a=blob_plain;f=README;hb=HEAD">README</a>
-  * <a href="http://presage.git.sourceforge.net/git/gitweb.cgi?p=presage/presage;a=blob_plain;f=INSTALL;hb=HEAD">INSTALL</a>
-  * <a href="http://presage.git.sourceforge.net/git/gitweb.cgi?p=presage/presage;a=blob_plain;f=doc/INSTALL_MSYS2_dev_env.txt;hb=HEAD">INSTALL_MSYS2_dev_env.txt</a>
-  * <a href="http://presage.git.sourceforge.net/git/gitweb.cgi?p=presage/presage;a=blob_plain;f=doc/INSTALL_Cygwin_dev_env.txt;hb=HEAD">INSTALL_cygwin_dev_env.txt</a>
-  * <a href="http://presage.git.sourceforge.net/git/gitweb.cgi?p=presage/presage;a=blob_plain;f=doc/INSTALL_MinGW_MSYS_dev_env.txt;hb=HEAD">INSTALL_MinGW_MSYS_dev_env.txt</a>
+  * [README](https://sourceforge.net/p/presage/presage/ci/master/tree/README)
+  * [INSTALL](https://sourceforge.net/p/presage/presage/ci/master/tree/INSTALL)
+  * [INSTALL_MSYS2_dev_env.txt](https://sourceforge.net/p/presage/presage/ci/master/tree/doc/INSTALL_MSYS2_dev_env.txt)
+  * [INSTALL_cygwin_dev_env.txt](https://sourceforge.net/p/presage/presage/ci/master/tree/doc/INSTALL_Cygwin_dev_env.txt)
+  * [INSTALL_MinGW_MSYS_dev_env.txt](https://sourceforge.net/p/presage/presage/ci/master/tree/doc/INSTALL_MinGW_MSYS_dev_env.txt)
 
 files for more detailed information on software dependencies required to build presage.
 
-<!--more-->
-
-A full list of required and optional software can be found in the <a href="http://presage.git.sourceforge.net/git/gitweb.cgi?p=presage/presage;a=blob_plain;f=README;hb=HEAD">README</a>.
+A full list of required and optional software can be found in the [README](https://sourceforge.net/p/presage/presage/ci/master/tree/README).
 
 
 ### GIT access

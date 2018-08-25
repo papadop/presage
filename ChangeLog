@@ -1,3 +1,7 @@
+2018-08-25  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
+
+	* website/hugo/*: fix links to gitview page.
+
 2018-08-19  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* website/hugo/*: remove links content from site, add hero header
