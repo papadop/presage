@@ -1,7 +1,8 @@
 2018-08-25  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* website/hugo/*: fix links to git source view in downloads page,
-	fix links in development section.
+	fix links in development section, add ACAT screenshot to
+	applications page, use figure shortcode.
 
 2018-08-19  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
