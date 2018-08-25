@@ -1,12 +1,7 @@
 ---
 title:       "Contact"
-type:        page
 date:        2007-05-12
 changed:     2007-05-13
-draft:       false
-promote:     false
-sticky:      false
-aliases:     [ node/19 ]
 menu:	     [ "main" ]
 weight:	     80
 description: "get in touch"

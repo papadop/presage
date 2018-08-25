@@ -2,7 +2,6 @@
 title:       "About"
 date:        2007-05-12
 changed:     2009-12-22
-draft:       false
 description: "the presage project: core architecture and concepts"
 menu:
   main:

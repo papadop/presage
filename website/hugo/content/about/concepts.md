@@ -1,9 +1,9 @@
+
 ---
 title:       "Concepts"
 type:        page
 date:        2007-05-12
 changed:     2009-08-27
-draft:       false
 weight:	     20
 ---
 
@@ -15,7 +15,7 @@ The key idea is modelling natural language as a set of redundant sources of info
 
 <!--more-->
 
-Information sources can be classified as [statistical](#statistical-sources), [syntactic](#syntactic-sources) and [semantic](#semantic-sources).
+Information sources can be classified as [statistical]({{< relref "#statistical-sources" >}}), [syntactic]({{< relref "#syntactic-sources" >}}) and [semantic]({{< relref "#semantic-sources" >}}).
 
 
 ## Statistical sources

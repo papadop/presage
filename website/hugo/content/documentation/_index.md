@@ -1,12 +1,7 @@
 ---
 title:       "Documentation"
-type:        page
 date:        2007-05-13
 changed:     2013-11-06
-draft:       false
-promote:     false
-sticky:      false
-aliases:     [ node/20 ]
 menu:        [ "main" ]
 weight:	     50
 description: "read all about presage"
@@ -16,7 +11,7 @@ description: "read all about presage"
 
 This <a href="http://sourceforge.net/p/presage/presage/ci/master/tree/doc/getting_started.txt">quick start guide</a> will get you started with programming your first presage application in five minutes or less.
 
-If you are interested in trying presage out rather than developing a new presage powered application, then head over to the [applications](/applications/) page and give one of those a whirl.
+If you are interested in trying presage out rather than developing a new presage powered application, then head over to the [applications]({{< relref "/applications/" >}}) page and give one of those a whirl.
 
 
 ## Papers
@@ -53,7 +48,3 @@ You may find it [here](presage/doc/html/index.html).
  <dt><a href="https://sourceforge.net/mailarchive/forum.php?forum_name=presage-devel">presage-devel</a></dt>
  <dd>presage-devel@lists.sourceforge.net</dd>
 </dl>
-
-<!--more-->
-
-

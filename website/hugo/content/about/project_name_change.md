@@ -3,7 +3,6 @@ title:       "Project name change"
 type:        page
 date:        2008-07-08
 changed:     2012-06-09
-draft:       false
 weight:	     30
 ---
 
@@ -15,9 +14,9 @@ Matteo recognised their concern and found their request reasonable.
 
 <!--more-->
 
-After carefully considering the matter and <a href="http://lists.debian.org/debian-mentors/2008/07/msg00083.html">seeking some advice</a>, Matteo resolved to comply with their request to change the soothsayer project name, despite the fact that the soothsayer name had begun to <a href="?q=node/20">receive some attention</a>.
+After carefully considering the matter and <a href="http://lists.debian.org/debian-mentors/2008/07/msg00083.html">seeking some advice</a>, Matteo resolved to comply with their request to change the soothsayer project name, despite the fact that the soothsayer name had begun to [receive some attention]({{< relref "/documentation#articles" >}}).
 
-The choice of a new project name eventually settled on *Presage*.
+The choice of a new project name eventually settled on *presage*.
 
 **Noun**  
 **presage** (*plural* presages)

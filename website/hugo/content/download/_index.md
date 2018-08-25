@@ -66,7 +66,7 @@ You can obtain the very latest *bleeding edge* source code directly from our sou
 
 Please note that from time to time the latest sources may be in an *experimental* state and thus not suitable for general usage (in practice, however, head is usually in pretty good shape).
 
-Please refer to the source code repository section on our [development](/development/) page for additional instructions.
+Please refer to the source code repository section on our [development]({{< relref "/development/" >}}) page for additional instructions.
 
 
 ### Building presage

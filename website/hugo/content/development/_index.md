@@ -12,13 +12,13 @@ Presage provides a powerful predictive text entry system, but there is so much m
 
 ## Contributing
 
-If you wish to contribute to presage development, the [getting started guide](/documentation#quick-start) is a good place to start. The existing [source code documentation](/documentation#developers-api) is also a good resource to gain a high level overview of the project.
+If you wish to contribute to presage development, the [getting started guide]({{< relref "/documentation#quick-start" >}}) is a good place to start. The existing [source code documentation]({{< relref "/documentation#developers-api" >}}) is also a good resource to gain a high level overview of the project.
 
 Once you are ready to get coding, be sure to:
 
-  * Learn how to access our [source code repository](#source-code-repository) to get the latest and greatest presage. Build presage on your platform of choice. Run the extensive testsuite. If you find a bug, fix it, test your fix, send in a patch. Rinse, lather and repeat.
+  * Learn how to access our [source code repository]({{< relref "#source-code-repository" >}}) to get the latest and greatest presage. Build presage on your platform of choice. Run the extensive testsuite. If you find a bug, fix it, test your fix, send in a patch. Rinse, lather and repeat.
   * Take a look at the current [TODO list](http://sourceforge.net/p/presage/presage/ci/master/tree/TODO) for get an idea of desired feature enhancements or improvements to presage's functionality.
-  * [Get in touch](/contact) to announce your intention to contribute to presage. Find out what other developers are currently working on and coordinate your work to avoid duplicating effort.
+  * [Get in touch]({{< relref "/contact" >}}) to announce your intention to contribute to presage. Find out what other developers are currently working on and coordinate your work to avoid duplicating effort.
 
 
 ## Source code repository
@@ -39,7 +39,7 @@ Source code is the only accepted currency.
 
 Please do not offer to send money to the author.
 
-If you wish to have a feature implemented, please [get in touch](/contact).
+If you wish to have a feature implemented, please [get in touch]({{< relref "/contact" >}}).
 
 
 ## Bug reporting
@@ -49,4 +49,4 @@ Bugs should be logged in the [presage bug tracking system](https://sourceforge.n
 
 ## Mailing lists
 
-Head down to the presage users' and developers' [mailing lists](/documentation#mailing-lists) to ask and help answer questions about presage.
+Head down to the presage users' and developers' [mailing lists]({{< relref "/documentation#mailing-lists" >}}) to ask and help answer questions about presage.

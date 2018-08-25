@@ -1,12 +1,7 @@
 ---
 title:       "Applications"
-type:        page
 date:        2010-02-14
 changed:     2012-05-07
-draft:       false
-promote:     false
-sticky:      false
-aliases:     [ node/44 ]
 menu:	     [ "main" ]
 weight:	     60
 description: "see presage in action"

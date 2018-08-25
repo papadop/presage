@@ -2,7 +2,8 @@
 
 	* website/hugo/*: fix links to git source view in downloads page,
 	fix links in development section, add ACAT screenshot to
-	applications page, use figure shortcode.
+	applications page, use figure shortcode, swith to relref
+	shortcode, remove unused frontmatter params.
 
 2018-08-19  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 

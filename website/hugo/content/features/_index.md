@@ -1,12 +1,7 @@
 ---
 title:       "Features"
-type:        page
 date:        2007-05-12
 changed:     2014-09-11
-draft:       false
-promote:     false
-sticky:      false
-aliases:     [ node/15 ]
 menu:        [ "main" ]
 weight:	     40
 description: "that make presage an intelligent text entry system"
