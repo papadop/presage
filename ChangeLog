@@ -1,3 +1,7 @@
+2018-08-27  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
+
+	* website/hugo/*: fix relref cross-references.
+
 2018-08-25  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* website/hugo/*: fix links to git source view in downloads page,
