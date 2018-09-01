@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://presage.sourceforge.io/"
 languageCode = "en-us"
 title = "presage"
 theme = "ananke"

@@ -180,7 +180,7 @@ namespace presage_wcf_service_system_tray
             this.linkLabel.Size = new System.Drawing.Size(180, 13);
             this.linkLabel.TabIndex = 6;
             this.linkLabel.TabStop = true;
-            this.linkLabel.Text = "http://presage.sourceforge.net";
+            this.linkLabel.Text = "https://presage.sourceforge.io/";
             this.linkLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.linkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
             // 

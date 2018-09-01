@@ -551,7 +551,7 @@ void on_help()
 		     TEXT("Presage is not installed on your system.\n")
 		     TEXT("\n")
 		     TEXT("Please download and install presage:\n")
-		     TEXT("http://presage.sourceforge.net/\n"),
+		     TEXT("https://presage.sourceforge.io/\n"),
 		     TEXT("Help with Presage Notepad++ plugin"),
 		     MB_OK);
     }

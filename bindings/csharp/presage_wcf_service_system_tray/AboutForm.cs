@@ -71,7 +71,7 @@ namespace presage_wcf_service_system_tray
 
         private void linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://presage.sourceforge.net");
+            System.Diagnostics.Process.Start("https://presage.sourceforge.io/");
         }
     }
 }

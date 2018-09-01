@@ -393,7 +393,7 @@ The Presage project aims to provide an intelligent predictive text entry platfor
 
 Think of Presage as the predictive backend that sits behind a shiny user interface and does all the predictive heavy lifting.
 '''
-      website = 'http://presage.sourceforge.net/'
+      website = 'https://presage.sourceforge.io/'
       devs = ["Matteo Vescovi"]
       license = '''This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

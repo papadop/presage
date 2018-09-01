@@ -101,7 +101,7 @@
   !define MUI_FINISHPAGE_SHOWREADME_TEXT "Show getting started text file"
   !define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED
   !define MUI_FINISHPAGE_LINK "For the latest news and updates, visit the website"
-  !define MUI_FINISHPAGE_LINK_LOCATION http://presage.sourceforge.net/
+  !define MUI_FINISHPAGE_LINK_LOCATION https://presage.sourceforge.io/
   !insertmacro MUI_PAGE_FINISH
   
   !insertmacro MUI_UNPAGE_WELCOME
@@ -227,7 +227,7 @@ Section "-Runtime" SecRuntime
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\presage" "DisplayName" "${PRESAGE_NAME} (${BITNESS}-bit)"
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\presage" "UninstallString" "$INSTDIR\Uninstall.exe"
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\presage" "InstallLocation" "$INSTDIR"
-  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\presage" "Publisher" "http://presage.sourceforge.net"
+  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\presage" "Publisher" "https://presage.sourceforge.io/"
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\presage" "DisplayVersion" "${PRESAGE_VERSION}"
   WriteRegDWORD HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\presage" "NoModify" "1"
   WriteRegDWORD HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\presage" "NoRepair" "1"

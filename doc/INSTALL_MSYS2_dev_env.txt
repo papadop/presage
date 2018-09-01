@@ -1,4 +1,4 @@
-Grab MSYS2 from http://msys2.github.io/
+Grab MSYS2 from https://www.msys2.org/
 
 Run through MSYS2 64bit installer. Simply pick next at each step.
 

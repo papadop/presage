@@ -228,7 +228,7 @@ void MainWindow::about()
 			  "interface and does all the predictive heavy lifting.\n"
 			  "\n"
 			  "Copyright (C) Matteo Vescovi\n"
-			  "http://presage.sourceforge.net\n"
+			  "https://presage.sourceforge.io/\n"
 			   )
 	);
 }

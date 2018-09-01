@@ -1,3 +1,16 @@
+2018-09-01  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
+
+	* apps/dbus/setup.py.in, apps/gtk/gprompter/gprompter.c,
+	apps/notepad++/src/PluginDefinition.cpp,
+	apps/python/presagemate/presagemate.py,
+	apps/python/prompter/prompter.py, apps/python/setup.py.in,
+	apps/qt/qprompter/mainwindow.cpp,
+	bindings/csharp/presage_wcf_service_system_tray/AboutForm.Designer.cs,
+	bindings/csharp/presage_wcf_service_system_tray/AboutForm.cs,
+	bindings/python/setup.py.in,
+	packaging/windows/presage_installer.nsi: update presage URL to new
+	https address.
+
 2018-08-27  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* website/hugo/*: fix relref cross-references.

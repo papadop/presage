@@ -363,7 +363,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
    about.set_program_name('pypresagemate')
    about.set_version("0.1")
    about.set_copyright("(c) Matteo Vescovi\n(c) John Hills")
-   about.set_website("http://presage.sourceforge.net/")
+   about.set_website("https://presage.sourceforge.io/")
    about.set_comments(comments)
    if os.path.isfile("/usr/local/share/presage/presage.png"):
       about.set_logo(gtk.gdk.pixbuf_new_from_file("/usr/local/share/presage/presage.png"))

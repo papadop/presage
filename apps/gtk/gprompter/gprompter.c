@@ -1030,7 +1030,7 @@ static void on_menu_help_about( GtkWidget* widget,
     static const gchar* title = 
       "About gprompter";
     static const gchar* website = 
-      "http://presage.sourceforge.net";
+      "https://presage.sourceforge.io/";
 
     static const gchar* logo_image_full_filename = pkgdatadir "/presage.png";
     GdkPixbuf* logo = gdk_pixbuf_new_from_file (logo_image_full_filename, NULL);
