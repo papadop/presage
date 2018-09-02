@@ -1,4 +1,4 @@
-Copyright (C) 2008  Matteo Vescovi <matteo.vescovi@yahoo.co.uk>
+Copyright (C) 2008-2018  Matteo Vescovi <matteo.vescovi@yahoo.co.uk>
 ___________________
 The Presage project
 ~~~~~~~~~~~~~~~~~~~
@@ -12,58 +12,64 @@ Presage in a few minutes.
 
 This README does not contain the answers to all the questions you
 might have. If you run into troubles, if you have problems, or if you
-would like a pressing question answered, please direct your attention
-to the doc/ directory, where you will find all the available
-documentation.
+have a question, please look for answers in the doc/ directory. If you
+cannot find an answer there, get in touch.
 
 
 Requirements:
-- A working development enviroment.
 
-  On Linux/Unix systems, this means having GCC (g++), the GNU Compiler
-  Collection packages, make, as well as libraries for these languages
-  (libstdc++, glibc, etc). To regenerate the autotools machinery,
-  you'll need autoconf, automake, libtool and pkg-config packages.
+  - A working development enviroment.
 
-  On Solaris systems, this means having Studio 10 or later compilers.
+    On Linux/Unix systems, this means having GCC (g++), the GNU Compiler
+    Collection packages, make, as well as libraries for these languages
+    (libstdc++, glibc, etc). To regenerate the autotools machinery,
+    you'll need autoconf, automake, libtool and pkg-config packages.
 
-  On Windows systems, please either install the Cygwin development
-  environment or the MinGW/MSYS developer environment.
+    On Solaris systems, this means having Studio 10 or later compilers.
 
-  Cygwin can be obtained from http://www.cygwin.com
-  Instructions on how to setup Cygwin and required packages can be
-  found in the doc/INSTALL_Cygwin_dev_env.txt file.
+    On Windows systems, please install the MSYS2 development
+    environment. Instructions on how to setup MSYS2 and required
+    packages can be found in the doc/INSTALL_MSYS2_dev_env.txt file.
 
-  MinGW/MSYS can be obtained from http://www.mingw.org
-  Instructions on how to setup MinGW/MSYS and required packages can be
-  found in the doc/INSTALL_MinGW_MSYS_dev_env.txt file.
+  - SQLite package. SQLite is a small C library that implements a
+    self-contained, embeddable, zero-configuration SQL database engine.
+    SQLite can be obtained from http://www.sqlite.org
 
-- SQLite package. SQLite is a small C library that implements a
-  self-contained, embeddable, zero-configuration SQL database engine.
-  SQLite can be obtained from http://www.sqlite.org
- 
-  On Debian systems, install libsqlite3-dev and sqlite3 packages.
+    On Debian systems, install libsqlite3-dev and sqlite3 packages.
+
 
 Optional:
-- Curses library. On Debian systems, install libncurses5-dev.
 
-- CPPUnit library. On Debian systems, install libcppunit-dev.
+  - Curses library. On Debian systems, install libncurses5-dev.
 
-- Python package. On Debian systems, install python-dev.
+  - CPPUnit library. On Debian systems, install libcppunit-dev.
 
-- SWIG package. On Debian systems, install swig.
+  - Python package. On Debian systems, install python-dev.
 
-- help2man package. On Debian systems, install help2man.
+  - SWIG package. On Debian systems, install swig.
 
-- doxygen package. On Debian systems, install doxygen.
+  - help2man package. On Debian systems, install help2man.
 
-- dot program. On Debian systems, install graphviz.
+  - doxygen package. On Debian systems, install doxygen.
 
-- X11 EvIE extension library. On Debian systems, install libxevie-dev.
+  - dot program. On Debian systems, install graphviz.
 
-- GNOME development package. On Debian systems, install gnome-devel.
+  - GNOME development package. On Debian systems, install gnome-devel.
 
-- CMU-Cambridge Statistical Language Modeling toolkit.
+  - D-BUS python package. On Debian systems, install python-dbus.
+
+  - wxPython package. On Debian systems, install python-wxgtk3.0-dev.
+
+  - GTK 2 python dev package. On Debian systems, install python-gtk2-dev.
+
+  - Xlib python package. On Debian systems, install python-xlib.
+
+  - AT-SPI python package. On Debian systems, install python-pyatspi.
+
+  - X11 EvIE extension library. On Debian systems, install libxevie-dev
+    (obsolete).
+
+  - CMU-Cambridge Statistical Language Modeling toolkit.
 
 
 _______________________
@@ -73,24 +79,19 @@ STEP 0: Getting Presage
 Official releases and development snapshots are available from the
 download section of the official website hosted by SourceForge
 
-  https://presage.sourceforge.io/
+    https://presage.sourceforge.io/
 
-Alternatively, get the latest and greatest sources from SVN.
+Alternatively, get the latest and greatest sources from the source
+repository.
 
 
 _________________________
 STEP 1: Unpacking Presage
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On Linux/Unix, uncompress and untar the distribution with 
+Uncompress and untar the distribution with:
 
-  tar jxvf presage-*.tar.bz2
-
-or
-
-  tar zxvf presage-*.tar.gz
-
-depending on whether you downloaded the tarball or the bzipped archive.
+    tar zxvf presage-*.tar.gz
 
 
 ___________________________
@@ -98,14 +99,18 @@ STEP 2: Configuring Presage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Configuring Presage to different platforms, environments and
-operating systems is simply a matter of running
+operating systems is simply a matter of running:
 
-  ./configure
+    ./configure
 
 in the top-level directory of the distribution. This will configure
-Presage for your system. Should you require additional options, try
+Presage for your system. If you are starting from a source repository
+checkout, you will need to bootstrap the autotools machinery with
+`autoreconf -i'.
 
-  ./configure --help
+Should you require additional options, try:
+
+    ./configure --help
 
 to see the available options.
 
@@ -114,21 +119,22 @@ _________________________
 STEP 3: Compiling Presage
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Kick off the compilation with
+Build Presage with:
 
-  make
+    make
 
-This will build the Presage system, libraries and available
-plugins.
+Some components (mostly Windows components) will require an additional
+build step. See READMEs in the bindings/csharp/, bindings/c/,
+apps/qt/, apps/notepad++/ directories.
 
 
 __________________________
 STEP 4: Installing Presage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Install Presage and its support libraries and plugins by typing
+Install Presage with:
 
-  make install
+    make install
 
 
 __________________________________
@@ -203,7 +209,7 @@ always built). To start, type:
 
 ########/
 
-Copyright (C) 2008  Matteo Vescovi <matteo.vescovi@yahoo.co.uk>
+Copyright (C) 2008-2018  Matteo Vescovi <matteo.vescovi@yahoo.co.uk>
 
 Presage is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
