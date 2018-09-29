@@ -3,6 +3,21 @@ ___________________
 The Presage project
 ~~~~~~~~~~~~~~~~~~~
 
+    ** IMPORTANT **
+
+    The recommended build environment
+    for presage on Windows is MSYS2.
+
+    For instructions on how to setup an
+    MSYS2 build environment on Windows,
+    please see doc/INSTALL_MSYS2_dev_env.txt.
+
+    ----> Please use MSYS2 instead <----
+
+    The following instructions might no
+    longer work. Proceed at your own risk.
+
+
 Building Presage on MinGW/MSYS 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

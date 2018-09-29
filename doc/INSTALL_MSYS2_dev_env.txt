@@ -1,3 +1,8 @@
+Copyright (C) 2015-2018  Matteo Vescovi <matteo.vescovi@yahoo.co.uk>
+___________________
+The Presage project
+~~~~~~~~~~~~~~~~~~~
+
 Grab MSYS2 from https://www.msys2.org/
 
 Run through MSYS2 64bit installer. Simply pick next at each step.
@@ -9,8 +14,79 @@ Close MSYS2, run it again from Start menu and update the rest with:
   pacman -Su
 
 Install required dependencies:
+(you can copy&paste from the sections below into an MSYS2 shell)
 
-  # 64-bit x86_64
+# Bare minimum requirements
+##
+pacman -S \
+  make \
+  pkg-config \
+  mingw-w64-x86_64-gcc \
+  mingw-w64-x86_64-sqlite3
+
+# To build from a source repository checkout
+##
+pacman -S \
+  autoconf \
+  automake \
+  libtool \
+  git
+
+
+# Optional
+##
+
+# man page
+pacman -S \
+  help2man
+
+# API doc
+pacman -S \
+  mingw-w64-x86_64-doxygen \
+  mingw-w64-x86_64-graphviz
+
+# python binding
+pacman -S \
+  mingw-w64-x86_64-swig \
+  mingw-w64-x86_64-python2
+
+# pyprompter
+pacman -S \
+  mingw-w64-x86_64-wxPython
+
+# gprompter
+pacman -S \
+  mingw-w64-x86_64-gtk2
+
+# qprompter
+pacman -S \
+  mingw-w64-x86_64-qt5 \
+  mingw-w64-x86_64-qscintilla
+
+# NSIS
+pacman -S \
+  mingw-w64-x86_64-nsis
+
+
+# and for hacking on presage
+pacman -S \
+  mingw-w64-x86_64-emacs
+
+
+
+
+
+
+
+
+
+
+
+####
+# old list
+####
+
+# 64-bit x86_64
   pacman -S \
     make autoconf automake libtool tar \
     mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb \

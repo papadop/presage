@@ -1,3 +1,8 @@
+2018-09-29  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
+
+	* doc/INSTALL_*.txt: MSYS2 recommended build environment on
+	Windows, update build instructions.
+
 2018-09-01  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* apps/dbus/setup.py.in, apps/gtk/gprompter/gprompter.c,
