@@ -12,14 +12,14 @@ isEmpty(PRESAGE_ROOT) {
         error(PRESAGE_ROOT does not exist. Please set environment variable PRESAGE_ROOT to a valid presage installation.)
 }
 
-CONFIG       += release
+CONFIG       += release qscintilla2
 HEADERS       = mainwindow.h
 SOURCES       = main.cpp \
                 mainwindow.cpp
 RESOURCES     = qprompter.qrc
 
 QT           += widgets
-LIBS         += -lqscintilla2 -L$${PRESAGE_ROOT}/lib -lpresage
+LIBS         += -L$${PRESAGE_ROOT}/lib -lpresage
 INCLUDEPATH   = $${PRESAGE_ROOT}/include
 
 

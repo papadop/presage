@@ -3,6 +3,9 @@
 	* doc/INSTALL_*.txt: MSYS2 recommended build environment on
 	Windows, update build instructions.
 
+	* apps/qt/qprompter/qprompter.pro: fix bug in qscintilla2
+	dependency declaration.
+
 2018-09-01  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* apps/dbus/setup.py.in, apps/gtk/gprompter/gprompter.c,
