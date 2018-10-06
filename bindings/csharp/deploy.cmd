@@ -21,7 +21,7 @@ if exist "%target_bin_dir%" (
     exit /b 1
 )
 
-if "%Platform%" == "X64" (
+if "%Platform%" == "x64" (
     set build_mode=Release
     set build_arch=x64
 ) else (

@@ -1,3 +1,9 @@
+2018-10-06  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
+
+	* apps/notepad++/vs.proj/NppPresage.vcxproj,
+	bindings/csharp/deploy.cmd: upgrade to Visual Studio 2017, tested
+	with VS2017 community edition.
+
 2018-09-29  Matteo Vescovi  <matteo(dot)vescovi(at)yahoo(dot)co(dot)uk>
 
 	* doc/INSTALL_*.txt: MSYS2 recommended build environment on
