@@ -146,15 +146,15 @@ Section "-Runtime" SecRuntime
   File "bin\libsqlite3-0.dll"
 
   ; QT deps
-  File "bin\qscintilla2.dll"
+  File "bin\qscintilla2_qt5.dll"
   File "bin\Qt5Core.dll"
   File "bin\Qt5Gui.dll"
   File "bin\Qt5Widgets.dll"
   File "bin\Qt5PrintSupport.dll"
-  File "bin\libicuin58.dll"
-  File "bin\libicuuc58.dll"
-  File "bin\libicudt58.dll"
-  File "bin\libpcre16-0.dll"
+  File "bin\libicuin62.dll"
+  File "bin\libicuuc62.dll"
+  File "bin\libicudt62.dll"
+  File "bin\libpcre2-16-0.dll"
 
   ; GTK deps
   File "bin\libatk-1.0-0.dll"
@@ -189,6 +189,9 @@ Section "-Runtime" SecRuntime
   File "bin\libpixman-1-0.dll"
   File "bin\libpcre-1.dll"
   File "bin\libgraphite2.dll"
+  File "bin\libfribidi-0.dll"
+  File "bin\libthai-0.dll"
+  File "bin\libdatrie-1.dll"
 
 
   ; etc/
@@ -405,7 +408,7 @@ Section "Uninstall"
   Delete "$INSTDIR\bin\libicuin57.dll"
   Delete "$INSTDIR\bin\libicuuc57.dll"
   Delete "$INSTDIR\bin\libicudt57.dll"
-  Delete "$INSTDIR\bin\libpcre16-0.dll"
+  Delete "$INSTDIR\bin\libpcre2-16-0.dll"
   Delete "$INSTDIR\bin\libwinpthread-1.dll"
 
   ; GTK deps
@@ -441,6 +444,9 @@ Section "Uninstall"
   Delete "$INSTDIR\bin\libpixman-1-0.dll"
   Delete "$INSTDIR\bin\libpcre-1.dll"
   Delete "$INSTDIR\bin\libgraphite2.dll"
+  Delete "$INSTDIR\bin\libfribidi-0.dll"
+  Delete "$INSTDIR\bin\libthai-0.dll"
+  Delete "$INSTDIR\bin\libdatrie-1.dll"
 
   ; .NET binding deps
   Delete "$INSTDIR\bin\presage.net.dll"
