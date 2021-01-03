@@ -21,6 +21,7 @@
                                                                              *
                                                                 **********(*)*/
 
+#include <filesystem>
 
 #include "databaseConnector.h"
 
@@ -320,20 +321,20 @@ std::string DatabaseConnector::get_database_filename () const
 
 std::string DatabaseConnector::set_database_filename (const std::string& filename)
 {
-    std::string prev_filename = database_filename;
+    const std::string& prev_filename = database_filename;
 
     database_filename = expand_variables (filename);
 
     // make an attempt at determining whether directory where language
     // model database is located exists and try to create it if it
     // does not... only cater for one directory level to create it.
-    //
-    std::string dir = Utility::dirname (database_filename);
+
+    const std::filesystem::path& dir = std::filesystem::path(database_filename).remove_filename();
     if (! dir.empty()) {
 	// check that specified directory exists and accessible
-	if (! Utility::is_directory_usable (dir)) {
+	if (! std::filesystem::is_directory(dir)) {
 	    // create it if not
-	    Utility::create_directory (dir);
+	    std::filesystem::create_directory(dir);
 	}
     }
 
