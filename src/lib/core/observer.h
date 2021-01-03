@@ -25,7 +25,7 @@
 #ifndef PRESAGE_OBSERVER
 #define PRESAGE_OBSERVER
 
-#if HAVE_CONFIG_H
+#ifdef HAVE_CONFIG_H
 # include "config.h"
 #endif
 

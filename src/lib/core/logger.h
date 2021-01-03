@@ -25,12 +25,15 @@
 #ifndef PRESAGE_LOGGER
 #define PRESAGE_LOGGER
 
-#if HAVE_CONFIG_H
+#ifdef HAVE_CONFIG_H
 #  include <config.h>
 #endif
 
-#include <iostream>
+// This is defined in tinyxml.h
 
+#undef DEBUG
+
+#include <iostream>
 
 // manipulators
 struct _SetLevel { std::string _level; };

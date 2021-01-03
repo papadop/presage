@@ -24,7 +24,7 @@
 
 #include "profileTest.h"
 
-#ifdef STDC_HEADERS
+#ifdef HAVE_STDLIB_H
 # include <stdlib.h> // for getenv()
 #endif
 

@@ -31,12 +31,12 @@
 # include <pwd.h>
 #endif
 
-#if HAVE_UNISTD_H
+#ifdef HAVE_UNISTD_H
 # include <sys/types.h>
 # include <unistd.h>
 #endif
 
-#if HAVE_STDLIB_H
+#ifdef HAVE_STDLIB_H
 # include <stdlib.h>
 #endif
 

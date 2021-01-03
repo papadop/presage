@@ -42,7 +42,7 @@
 #include "predictors/predictor.h"
 
 
-#ifdef STDC_HEADERS
+#ifdef HAVE_STDLIB_H
 # include <stdlib.h>  // needed for abort function
 #endif
 
