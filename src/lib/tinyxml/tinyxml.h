@@ -53,6 +53,8 @@ distribution.
 	#define TIXML_STRING		TiXmlString
 #endif
 
+#include "TinyXMLExport.h"
+
 // Deprecated library function hell. Compilers want to use the
 // new safe versions. This probably doesn't fully address the problem,
 // but it gets closer. There are too many compilers for me to fully
@@ -420,7 +422,7 @@ private:
 	in a document, or stand on its own. The type of a TiXmlNode
 	can be queried, and it can be cast to its more defined type.
 */
-class TiXmlNode : public TiXmlBase
+class TINYXML_EXPORT TiXmlNode : public TiXmlBase
 {
 	friend class TiXmlDocument;
 	friend class TiXmlElement;
@@ -937,7 +939,7 @@ private:
 	and can contain other elements, text, comments, and unknowns.
 	Elements also contain an arbitrary number of attributes.
 */
-class TiXmlElement : public TiXmlNode
+class TINYXML_EXPORT TiXmlElement : public TiXmlNode
 {
 public:
 	/// Construct an element.
@@ -1209,7 +1211,7 @@ private:
 	you generally want to leave it alone, but you can change the output mode with 
 	SetCDATA() and query it with CDATA().
 */
-class TiXmlText : public TiXmlNode
+class TINYXML_EXPORT TiXmlText : public TiXmlNode
 {
 	friend class TiXmlElement;
 public:
@@ -1282,7 +1284,7 @@ private:
 	handled as special cases, not generic attributes, simply
 	because there can only be at most 3 and they are always the same.
 */
-class TiXmlDeclaration : public TiXmlNode
+class TINYXML_EXPORT TiXmlDeclaration : public TiXmlNode
 {
 public:
 	/// Construct an empty declaration.
@@ -1390,7 +1392,7 @@ private:
 	XML pieces. It can be saved, loaded, and printed to the screen.
 	The 'value' of a document node is the xml file name.
 */
-class TiXmlDocument : public TiXmlNode
+class TINYXML_EXPORT TiXmlDocument : public TiXmlNode
 {
 public:
 	/// Create an empty document, that has no name.

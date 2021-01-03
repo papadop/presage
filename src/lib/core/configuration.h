@@ -29,11 +29,12 @@
 
 #include "variable.h"
 #include "../presageException.h"
+#include "PresageExport.h"
 
 /** Configuration allows to query and modify all presage runtime configuration variables.
  *
  */
-class Configuration {
+class PRESAGE_EXPORT Configuration {
 public:
     Configuration();
     ~Configuration();

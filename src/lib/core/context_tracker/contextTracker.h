@@ -44,6 +44,7 @@
 #include "../dispatcher.h"
 
 #include "../../presageCallback.h"
+#include "PresageExport.h"
 
 class PredictorRegistry;
 
@@ -152,7 +153,7 @@ class PredictorRegistry;
  *
  *
  */
-class ContextTracker : public Observer {
+class PRESAGE_EXPORT ContextTracker : public Observer {
 public:
     ContextTracker(Configuration* config,
 		   PredictorRegistry* predictorRegistry,

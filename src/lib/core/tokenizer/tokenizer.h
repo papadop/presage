@@ -34,6 +34,8 @@
 #include <string>
 #include <assert.h>
 
+#include "PresageExport.h"
+
 /** The Tokenizer class takes an input stream and parses it into "tokens", allowing the tokens to be read one at a time.
  * 
  * The parsing process is controlled by the character classification
@@ -61,7 +63,7 @@
  * and the set of separators, and then repeatedly loops, while method
  * hasMoreTokens returns true, calling the nextToken method.
  */
-class Tokenizer {
+class PRESAGE_EXPORT Tokenizer {
 public:
     Tokenizer(std::istream& stream,
 	      const std::string   blankspaces,

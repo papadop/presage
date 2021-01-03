@@ -27,6 +27,8 @@
 
 #include "tokenizer.h"
 
+#include "PresageExport.h"
+
 /** Tokenizes a stream from the beginning to the end.
  *  _ _ _ _ _ _ _
  * |_|_|_|_|_|_|_|
@@ -35,7 +37,7 @@
  *  |    offset
  *   offbeg
  */
-class ForwardTokenizer 
+class PRESAGE_EXPORT ForwardTokenizer 
 : public Tokenizer {
 public:
     ForwardTokenizer(std::istream& stream,

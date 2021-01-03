@@ -29,6 +29,8 @@
 
 #include <sstream>
 
+#include "SimulatorExport.h"
+
 /** Evaluates how good Presage is at doing its job (in other words, its ability to reduce keystrokes the user is required to type).
  *
  * Simulator computes the KSR (Keystrokes Savings Rate) obtained by
@@ -49,7 +51,7 @@
  * at any time by invoking the results method or the get methods.
  *
  */
-class Simulator {
+class SIMULATOR_EXPORT Simulator {
 public:
     Simulator(PresageCallback* callback,
 	      std::stringstream& sstream,
