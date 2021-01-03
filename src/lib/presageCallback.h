@@ -38,10 +38,11 @@ extern "C" {
 
 
 #ifdef __cplusplus
-#ifndef _MSC_VER
 
 #include <string>
 #include <sstream>
+
+#include "PresageExport.h"
 
 /** Abstract callback object used to retrieve context from user application.
  *
@@ -63,7 +64,7 @@ extern "C" {
  * following the current insertion point.
  *
  */ 
-class PresageCallback {
+class PRESAGE_EXPORT PresageCallback {
 public:
     virtual ~PresageCallback() { };
 
@@ -115,7 +116,6 @@ private:
     const std::string m_empty;
 };
 
-#endif /* _MSC_VER */
 #endif /* _cplusplus */
 
 #endif /* PRESAGE_CALLBACK */
