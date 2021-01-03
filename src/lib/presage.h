@@ -87,11 +87,12 @@
  */
 
 #ifdef __cplusplus
-#ifndef _MSC_VER
 
 #include <string>
 #include <vector>
 #include <map>
+
+#include "PresageExport.h"
 
 /* Forward declarations, not part of presage C++ API */
 class Configuration;
@@ -104,7 +105,7 @@ class Selector;
 
 /** \brief Presage, the intelligent predictive text entry platform.
  */
-class Presage {
+class PRESAGE_EXPORT Presage {
 public:
     /** Creates and initializes presage.
      *
@@ -112,7 +113,7 @@ public:
      * 
      * Presage does not take ownership of the callback object.
      */
-    Presage(PresageCallback* callback) throw (PresageException);
+    Presage(PresageCallback* callback);
 
 
     /** Creates and initializes presage with supplied configuration.
@@ -122,7 +123,7 @@ public:
      *
      * Presage does not take ownership of the callback object.
      */
-    Presage(PresageCallback* callback, const std::string config) throw (PresageException);
+    Presage(PresageCallback* callback, const std::string config);
 
 
     /** Destroys presage.
@@ -138,7 +139,7 @@ public:
      * context.
      *
      */
-    std::vector<std::string> predict() throw (PresageException);
+    std::vector<std::string> predict();
 
     /** \brief Obtain a prediction that matches the supplied token
      *         filter.
@@ -153,7 +154,7 @@ public:
      * of the filter tokens.
      *
      */
-    std::multimap<double, std::string> predict(std::vector<std::string> filter) throw (PresageException);
+    std::multimap<double, std::string> predict(std::vector<std::string> filter);
 
     /** \brief Learn from text offline.
      *
@@ -167,7 +168,7 @@ public:
      * \param text a text string to learn from.
      *
      */
-    void learn(const std::string text) const throw (PresageException);
+    void learn(const std::string text) const;
 
     /** \brief Callback getter/setter.
      *
@@ -176,7 +177,7 @@ public:
      *
      * \return pointer to previously used callback
      */
-    PresageCallback* callback(PresageCallback* callback) throw (PresageException);
+    PresageCallback* callback(PresageCallback* callback);
 
     /** \brief Request presage to return the completion string for the given predicted token.
      *
@@ -190,26 +191,26 @@ public:
      *
      * \return completion string
      */
-    std::string completion(std::string str) throw (PresageException);
+    std::string completion(std::string str);
 
     /** \brief Returns the text entered so far.
      *
      * \return context, text entered so far.
      */
-    std::string context() const throw (PresageException);
+    std::string context() const;
 
     /** \brief Returns true if a context change occured.
      *
      * \return true if a context change occured after the last update
      * or predict calls, or false otherwise.
      */
-    bool context_change() const throw (PresageException);
+    bool context_change() const;
 
     /** \brief Returns the current prefix.
      *
      * \return prefix
      */
-    std::string prefix() const throw (PresageException);
+    std::string prefix() const;
 
     /** \brief Gets the value of specified configuration variable.
      *
@@ -218,7 +219,7 @@ public:
      *
      * \return value assigned to configuration variable.
      */
-    std::string config(const std::string variable) const throw (PresageException);
+    std::string config(const std::string variable) const;
 
     /** \brief Sets the value of specified configuration variable.
      *
@@ -227,7 +228,7 @@ public:
      * from the configuration file in use.
      *
      */
-    void config(const std::string variable, const std::string value) const throw (PresageException);
+    void config(const std::string variable, const std::string value) const;
 
     /** \brief Save current configuration to file.
      *
@@ -236,14 +237,14 @@ public:
      * active XML profile.
      *
      */
-    void save_config() const throw (PresageException);
+    void save_config() const;
 
     /** \brief Returns presage release version.
      *
      * Programmatically retrieve the presage release version string.
      *
      */
-    std::string version() const throw (PresageException);
+    std::string version() const;
 
     /*
      * Presage public API ends here
@@ -259,7 +260,6 @@ private:
 
 };
 
-#endif /* _MSC_VER */
 #endif /* __cplusplus */
 
 /*
