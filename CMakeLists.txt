@@ -28,6 +28,10 @@ include(GNUInstallDirs)
 include(GenerateExportHeader)
 include(AddHeadersAndSources)
 
+if (WIN32)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+endif()
+
 option(BUILD_TINYXML "Build tinyxml as part of presage" OFF)
 
 set(VERSION "${PROJECT_VERSION}-beta")
@@ -66,18 +70,12 @@ else()
     set(BUILD_TINYXML ON)
 endif()
 
-find_package(SQLite QUIET)
-if (SQLite_FOUND)
-    set(HAVE_SQLITE_H 1)
-    set(SQLITE_LIBS SQLite::SQLite)
-    set(USE_SQLITE 1)
-endif()
-
 find_package(SQLite3 QUIET)
 if (SQLite3_FOUND)
     set(HAVE_SQLITE3_H 1)
     set(SQLITE_LIBS SQLite::SQLite3)
     set(USE_SQLITE 1)
+    include_directories(${SQLite3_INCLUDE_DIRS})
 endif()
 
 configure_file(config.h.cmake ${CMAKE_BINARY_DIR}/config.h)
@@ -91,6 +89,19 @@ add_subdirectory(resources)
 add_subdirectory(bindings)
 add_subdirectory(apps)
 add_subdirectory(doc)
+
+if (USE_SQLITE AND WIN32)
+    get_filename_component(SQLITE_DIR  ${SQLite3_LIBRARIES} DIRECTORY)
+    get_filename_component(SQLITE_BASE ${SQLite3_LIBRARIES} NAME_WE)
+    set(SQLITE_DLL "${SQLITE_DIR}/${SQLITE_BASE}.dll")
+    set(BUILD_TYPE_DIR Release)
+    if (NOT CMAKE_BUILD_TYPE OR X${CMAKE_BUILD_TYPE} STREQUAL "XDebug")
+        set(BUILD_TYPE_DIR Debug)
+    endif()
+    set(DLL_DESTINATION "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${BUILD_TYPE_DIR}")
+    file(COPY ${SQLITE_DLL} DESTINATION ${DLL_DESTINATION})
+    install(FILES ${SQLITE_DLL} DESTINATION ${CMAKE_INSTALL_BINDIR})
+endif()
 
 #original Makefile.am contents follow:
 
