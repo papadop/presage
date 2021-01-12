@@ -27,11 +27,11 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 add_subdirectory(core)
 add_subdirectory(predictors)
 
-set(presage_SOURCES presage.cpp ${CORE_SOURCES} ${PREDICTORS_SOURCES} libpresage.map)
+set(presage_SOURCES presage.cpp ${CORE_SOURCES} ${PREDICTORS_SOURCES})
 set(presage_HEADERS presage.h presageException.h presageCallback.h ${EXPORT_DIR}/PresageExport.h)
 
 add_library(presage SHARED ${presage_SOURCES})
-target_link_libraries(presage ${TINYXML_LIBRARIES} ${PREDICTORS_LIBRARIES} ${TinyXML_LIBRARIES})
+target_link_libraries(presage ${PREDICTORS_LIBRARIES} ${TinyXML_LIBRARIES})
 set_target_properties(presage PROPERTIES PUBLIC_HEADER "${presage_HEADERS}")
 set_target_properties(presage PROPERTIES VERSION 2.1.1 SOVERSION 2)
 
