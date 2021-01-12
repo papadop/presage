@@ -35,13 +35,15 @@
 #include <vector>
 #include <string>
 
+#include "PresageExport.h"
+
 typedef std::vector<std::string> Ngram;
 typedef std::vector<Ngram> NgramTable;
 
 /** Provides the interface to database creation, updating and querying operations.
  *
  */
-class DatabaseConnector {
+class PRESAGE_EXPORT DatabaseConnector {
 public:
     DatabaseConnector(const std::string database_name,
 		      const size_t cardinality,

@@ -40,7 +40,9 @@
 #include "databaseConnector.h"
 #include "../../presageException.h"
 
-class SqliteDatabaseConnector : public DatabaseConnector {
+#include "PresageExport.h"
+
+class PRESAGE_EXPORT SqliteDatabaseConnector : public DatabaseConnector {
   public:
     SqliteDatabaseConnector(const std::string db,
 			    const size_t cardinality,
