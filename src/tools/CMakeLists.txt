@@ -38,9 +38,8 @@ target_link_libraries(presage_simulator simulator ${PRESAGE_LIBS})
 
 unset(ADDITIONAL_TARGETS)
 if (USE_SQLITE)
-    add_library(tools SHARED ngram.cpp)
-    add_executable(text2ngram text2ngram.cpp)
-    target_link_libraries(text2ngram tools ${PRESAGE_LIBS})
+    add_executable(text2ngram text2ngram.cpp ngram.cpp ${EXTRA_SOURCES})
+    target_link_libraries(text2ngram ${PRESAGE_LIBS})
     set(ADDITIONAL_TARGETS ${ADDITIONAL_TARGETS} text2ngram)
 endif()
 
