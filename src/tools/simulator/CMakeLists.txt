@@ -21,5 +21,8 @@
 include_directories(${CMAKE_SOURCE_DIR}/src/lib)
 add_library(simulator SHARED simulator.cpp)
 target_link_libraries(simulator presage)
+set_target_properties(simulator PROPERTIES PUBLIC_HEADER "simulator.h")
 
 generate_export_header(simulator EXPORT_FILE_NAME ${EXPORT_DIR}/SimulatorExport.h)
+
+install(TARGETS simulator LIBRARY RUNTIME PUBLIC_HEADER)
