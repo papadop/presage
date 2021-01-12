@@ -24,7 +24,7 @@ endif()
 
 add_subdirectory(profiles)
 
-set(PRESAGE_DATA
+set(PRESAGE_RESOURCES
     presage.png presage.xpm presage.svg
     the_picture_of_dorian_gray.txt l_innocente.txt el_quijote.txt
     abbreviations_en.txt abbreviations_it.txt)
@@ -37,12 +37,12 @@ if (USE_SQLITE)
                            COMMAND text2ngram -n 2 -l -f sqlite -o ${db} ${textfile}
                            COMMAND text2ngram -n 3 -l -f sqlite -o ${db} ${textfile}
                            DEPENDS ${textfile})
-
-        set(PRESAGE_DATA ${PRESAGE_DATA} ${db})
+        set(PRESAGE_RESOURCES ${PRESAGE_RESOURCES} ${CMAKE_CURRENT_BINARY_DIR}/${db})
     endmacro()
     create_database(database_en.db "the_picture_of_dorian_gray.txt")
     create_database(database_it.db "l_innocente.txt")
     create_database(database_es.db "el_quijote.txt")
+    add_custom_target(databases ALL DEPENDS database_en.db database_it.db database_es.db text2ngram)
 endif()
 
-install(FILES ${PRESAGE_RESOURCES} DESTINATION share)
+install(FILES ${PRESAGE_RESOURCES} DESTINATION share/presage)
