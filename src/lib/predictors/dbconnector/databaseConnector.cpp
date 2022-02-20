@@ -329,7 +329,7 @@ std::string DatabaseConnector::set_database_filename (const std::string& filenam
     // model database is located exists and try to create it if it
     // does not... only cater for one directory level to create it.
 
-    const std::filesystem::path& dir = std::filesystem::path(database_filename).remove_filename();
+    const std::filesystem::path dir = std::filesystem::path(database_filename).remove_filename();
     if (! dir.empty()) {
 	// check that specified directory exists and accessible
 	if (! std::filesystem::is_directory(dir)) {
