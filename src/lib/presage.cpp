@@ -40,7 +40,7 @@ Presage::Presage (PresageCallback* callback)
     selector = new Selector(configuration, contextTracker);
 }
 
-Presage::Presage (PresageCallback* callback, const std::string config_filename)
+Presage::Presage (PresageCallback* callback, const std::string& config_filename)
 {
     profileManager = new ProfileManager(config_filename);
     configuration = profileManager->get_configuration();

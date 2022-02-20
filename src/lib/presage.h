@@ -123,7 +123,7 @@ public:
      *
      * Presage does not take ownership of the callback object.
      */
-    Presage(PresageCallback* callback, const std::string config);
+    Presage(PresageCallback* callback, const std::string& config);
 
 
     /** Destroys presage.
